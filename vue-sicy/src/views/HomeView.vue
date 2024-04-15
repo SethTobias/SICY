@@ -2,7 +2,7 @@
   <div class="home">
   <div class="landing">
     <h1 class="main">
-      Selector I Choose You!
+      Selector &lbrace;&rbrace; I Choose You!
     </h1>
   </div>
   <div class="content">
@@ -35,6 +35,7 @@ div[class='landing'] {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-flow: column nowrap;
   place-content: center;
   place-items: center;
   background-color: gray;
@@ -85,6 +86,27 @@ div[class='explanation'] {
   width: 100%;  
   height: 300px;
   text-align: center;
+}
+
+/* Mobile Portrait */
+@media screen and (width <= 480px) and (orientation: portrait) {
+  
+}
+/* Mobile Landscape */
+@media screen and (width <= 900px) and (orientation: landscape) {
+  
+}
+/* Tablet Portrait */
+@media screen and (480px < width <= 850px) and (orientation: portrait) {
+
+}
+/* Tablet Landscape */
+@media screen and (900px < width <= 1280px) and (orientation: landscape) {
+  
+}
+/* Laptop & Desktop */
+@media screen and ( 1280px < width) {
+  
 }
 
 </style>
